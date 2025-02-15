@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.circle-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 0 10px;
+}
+
+/* Timer Style */
+#timer {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 20px;
+    }
+}

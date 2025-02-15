@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abadan Syakira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tombol Play Musik -->
+    <button id="playMusic">Play Music 🎶</button>
+
+    <audio id="music" loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Kontainer Slider -->
+    <div class="container">
+        <!-- Slide 1 -->
+        <div class="slide" id="slide1">
+            <h1>Hii Cantiknya Abadan</h1>
+            <p>Abadan Minta maaf sayang yaa, udh ngebikin kamu marah</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" id="slide2">
+            <h1>Abadan Minta Maaf</h1>
+            <p>Abadan minta maaf banget udah ngirim reels yang bikin sayang takut dan marah ke Abadan</p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" id="slide3">
+            <h1>I LOVE YOU CANTIK</h1>
+            <p>Maafin Abadan yaa cintaaa, love you banyak banyak</p>
+        </div>
+
+        <!-- Slide 4 (Foto dalam Kerangka Bulat) -->
+        <div class="slide" id="slide4">
+            <div class="circle-image">
+                <img src="foto.jpeg" alt="Abadan Syakira">
+            </div>
+            <p>maafin abadan sayang ya, love you banyak banyak</p>
+        </div>
+    </div>
+
+    <!-- Kontrol Tombol -->
+    <div class="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Timer Waktu Kami Telah Menjadi Pasangan -->
+    <div id="timer">
+        <p>dari tanggal 23 September 2024 kami sudah menjadi pasangan selama: <span id="timePassed">00 Hari</span> dan masih terus berlanjut</p>
+    </div>
+
+    <script src="main.js"> </script>
+</body>
+</html>
